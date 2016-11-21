@@ -5,10 +5,11 @@
     .service('MenuService', MenuService);
 
   MenuService.$inject = ['$http', 'ApiPath'];
-  function MenuService($http) {
+  function MenuService($http, ApiPath) {
     var service = this;
 
-    service.getCategories = function($http, ApiPath) {
+    service.getCategories = function() {
+      debugger;
       return $http.get(ApiPath + '/categories.json').then(function(response) {
         return response.data;
       });
