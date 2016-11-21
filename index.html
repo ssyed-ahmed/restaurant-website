@@ -39,10 +39,10 @@
 
             <div id="collapsable-nav" class="collapse navbar-collapse">
               <ul id="nav-list" class="nav navbar-nav navbar-right">
-                <li id="navHomeButton" class="visible-xs active">
+                <li id="navHomeButton" class="visible-xs">
                   <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
                 </li>
-                <li id="navMenuButton">
+                <li id="navMenuButton" ui-sref-active="active">
                   <a ui-sref="public.menu">
                     <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
                 </li>
@@ -119,5 +119,6 @@
     <script type="text/javascript" src="src/public/public.module.js"></script>
     <script type="text/javascript" src="src/public/public.routes.js"></script>
     <script type="text/javascript" src="src/public/menu/menu.controller.js"></script>
+    <script type="text/javascript" src="src/public/menu-category/menu-category.component.js"></script>
   </body>
 </html>
